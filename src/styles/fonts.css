@@ -1,0 +1,60 @@
+/* Premium Multi-Font System */
+
+/* Inter — UI body text, dashboard, student cards */
+/* Poppins — headings, titles, hero text */
+/* JetBrains Mono — data, numbers, analytics, code */
+/* Playfair Display — report headers, formal sections */
+/* Plus Jakarta Sans — subheadings, labels */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+/* Font utility classes */
+.font-display {
+  font-family: "Poppins", system-ui, sans-serif;
+}
+
+.font-body {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.font-data {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+}
+
+.font-report {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.font-label {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+/* Apply base font to app */
+:root {
+  --font-sans: "Inter", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-display: "Poppins", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Courier New", monospace;
+  --font-serif: "Playfair Display", Georgia, serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Heading styles */
+h1, h2 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+h3, h4, h5, h6 {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+/* Numbers and data */
+.tabular-nums {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
