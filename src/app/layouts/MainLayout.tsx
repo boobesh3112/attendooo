@@ -1,7 +1,7 @@
 import { Outlet, useNavigate, useLocation } from "react-router";
 import { motion } from "motion/react";
 import { Home, CheckSquare, BarChart3, Users, User, Calendar } from "lucide-react";
-import { AIChatbot } from "../components/AIChatbot";
+import { AIChatbot } from "../../components/AIChatbot";
 
 export function MainLayout() {
   const navigate = useNavigate();
