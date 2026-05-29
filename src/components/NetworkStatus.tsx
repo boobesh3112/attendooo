@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Wifi, WifiOff, RefreshCw, SignalLow } from "lucide-react";
-import { haptics } from "../utils/haptics";
+import { haptics } from "../app/utils/haptics";
 
 type ConnectionStatus = "online" | "offline" | "poor" | "syncing";
 
