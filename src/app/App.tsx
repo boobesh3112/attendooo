@@ -3,7 +3,7 @@ import { RouterProvider } from "react-router";
 import { router } from "./routes";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "sonner";
-import { NetworkStatus } from "./components/NetworkStatus";
+import { NetworkStatus } from "../components/NetworkStatus";
 import { seedDemoData } from "./utils/seedData";
 import { themeManager } from "./utils/theme";
 import { notificationManager } from "./utils/notifications";
